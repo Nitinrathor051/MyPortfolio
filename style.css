@@ -1,0 +1,300 @@
+:root {
+  --primary-color: green;
+   --primary-light-color: #a1c4f8;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --nav-height: 60px;
+  --transition-duration: 0.3s;
+}
+
+/* Dark mode color variables */
+html.dark-mode {
+  --background-color: #222222;
+  --text-color: #eeeeee;
+}
+
+/* Base styles and smooth scrolling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  scroll-behavior: smooth; /* smooth in-page scroll */
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide nav by default */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(13, 132, 13);
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show nav when active */
+  }
+
+  .nav-link {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem; /* Increased font size for better clickability */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Change Hamburger Menu to "X" when active */
+  .nav-toggle.active .hamburger {
+    background-color: transparent;
+  }
+
+  .nav-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .nav-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
+
+/* Dark Mode Toggle */
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+/* Section styling */
+section {
+  padding: 80px 20px 40px; /* offset for fixed header */
+  max-width: 800px;
+  margin: auto;
+}
+section h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding-top: calc(var(--nav-height) + 20px);
+}
+.profile-img {
+  width: 200px;
+  height: 250px;
+  border-radius: 30%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .profile-img {
+    width: 120px; /* Adjust for smaller screens */
+    height: 120px;
+  }
+}
+
+.hero-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background var(--transition-duration);
+}
+.btn:hover {
+  background: #357abd;
+}
+
+/* Projects section cards */
+.project-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background-color: grey;
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 4px;
+  transition: transform var(--transition-duration), background-color var(--transition-duration), color var(--transition-duration);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+  transition: color var(--transition-duration);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Skills and other sections */
+.skill-list {
+  list-style: none;
+  columns: 2;
+}
+.skill-list li {
+  margin-bottom: 0.5rem;
+}
+.education ul {
+  list-style: none;
+}
+.contact .social-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Experience & Certificates */
+.experience-list,
+.cert-list {
+  list-style: none;
+  padding: 0;
+}
+.experience-list li,
+.cert-list li {
+  margin-bottom: 0.75rem;
+}
+
+/* Resume Download */
+.resume p {
+  margin-bottom: 0.5rem;
+}
+.resume .btn {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background var(--transition-duration);
+}
+.resume .btn:hover {
+  background: #125bb3; /* slightly darker primary */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #f1f1f1;
+  margin-top: 40px;
+}
+
+/* Reveal-on-scroll animation (initially hidden) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

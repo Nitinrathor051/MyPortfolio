@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Nitin Rathor | Web Developer Portfolio</title>
+  <!-- Link to external CSS and FontAwesome for icons -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Fixed header with logo/name, theme toggle, and nav links -->
+<header>
+  <nav class="navbar">
+    <div class="nav-brand">Nitin Rathor</div>
+
+    <!-- Hamburger menu for small screens -->
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+
+    <!-- Navigation links -->
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    
+    <!-- Dark mode toggle -->
+    <button id="theme-toggle" class="toggle-btn" aria-label="Toggle theme">🌙</button>
+  </nav>
+</header>
+
+  <!-- Hero section with Nitin's image, name, title, intro, and a CTA button -->
+  <section id="home" class="hero reveal">
+    <img src="nitin.jpg" alt="Profile picture of Nitin Rathor" class="profile-img">
+    <h1>Nitin Rathor</h1>
+    <p class="hero-title">Web Developer & Student (Shriram College of E&M, 2022–2026)</p>
+    <p>Hello! I'm a passionate web developer and engineering student who loves creating modern, responsive websites. I specialize in front-end and back-end development and enjoy solving problems with code.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+  <!-- About section with placeholder bio -->
+  <section id="about" class="about reveal">
+    <h2>About Me</h2>
+    <p>I am Nitin, a Computer Science & Engineering student (2022–2026) at Shriram College of Engineering & Management. I enjoy building web applications with HTML, CSS, and JavaScript, and I constantly work on new projects to improve my skills. In my free time, I contribute to open-source and take online courses to stay updated with web technologies.</p>
+  </section>
+
+<section id="projects" class="projects reveal">
+  <h2>Projects</h2>
+  <div class="project-cards">
+    <!-- Weather Web -->
+    <div class="card">
+      <h3><a href="https://github.com/Nitinrathor051/weather-app" target="_blank">Weather Web</a></h3>
+      <p>A real-time weather app built with React.js and the OpenWeatherMap API, featuring dynamic location search and responsive design.</p>
+    </div>
+
+    <!-- EnglishJourney Website -->
+    <div class="card">
+      <h3><a href="https://github.com/Nitinrathor051/EnglishJourny-web" target="_blank">EnglishJourney Website</a></h3>
+      <p>A language-learning portal frontend developed using HTML, CSS, and JavaScript, with interactive lessons and progress tracking UI.</p>
+    </div>
+
+    <!-- PacknGo Travel Booking -->
+    <div class="card">
+      <h3><a href="https://github.com/Naitikjain29/PackNGo" target="_blank">PacknGo Travel Booking</a></h3>
+      <p>Led a team of three to build a travel booking platform using HTML, CSS, and JavaScript, featuring destination listings and booking forms.</p>
+    </div>
+
+    <!-- Bulb On/Off -->
+    <div class="card">
+      <h3><a href="https://github.com/Nitinrathor051/Bulb-switch-webpage" target="_blank">Bulb On/Off</a></h3>
+      <p>An interactive web app that toggles a bulb graphic on and off, built with HTML, CSS, and JavaScript event handling.</p>
+    </div>
+
+    <!-- Typing Test Web -->
+    <div class="card">
+      <h3><a href="https://github.com/Nitinrathor051/Typingtest-web" target="_blank">Typing Test Web</a></h3>
+      <p>An engaging typing test platform showcasing real-time typing speed and accuracy, created with JavaScript and CSS animations.</p>
+    </div>
+
+    <!-- Investment Portfolio Tracker -->
+    <div class="card">
+      <h3><a href="https://github.com/Nitinrathor051/Investment-portfolio-tracker" target="_blank">Investment Portfolio Tracker</a></h3>
+      <p>A web application for tracking investments, built with HTML, CSS, and JavaScript, featuring data visualization and performance analytics.</p>
+    </div>
+
+    <!-- Banking Dashboard -->
+    <div class="card">
+      <h3><a href="https://github.com/Nitinrathor051/BANKING-DASHBOARD" target="_blank">Banking Dashboard</a></h3>
+      <p>A responsive banking dashboard interface designed using HTML, CSS, and JavaScript, with a focus on financial data presentation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills section with categorized headings -->
+<section id="skills" class="skills reveal">
+  <h2>Skills</h2>
+  
+  <div class="skill-category">
+    <h3>Frontend Development</h3>
+    <ul class="skill-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Bootstrap</li>
+      <li>Responsive Design</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <h3>Backend Development</h3>
+    <ul class="skill-list">
+      <li>Node.js</li>
+      <li>Express.js</li>
+      <li>SQL (Basic)</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <h3>Programming Languages</h3>
+    <ul class="skill-list">
+      <li>Java</li>
+      <li>OOP (Object-Oriented Programming)</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <h3>Tools & Platforms</h3>
+    <ul class="skill-list">
+      <li>VS Code</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </div>
+
+  <div class="skill-category">
+    <h3>Soft Skills</h3>
+    <ul class="skill-list">
+      <li>Problem Solving</li>
+      <li>Team Collaboration</li>
+      <li>Time Management</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- Education section -->
+<section id="education" class="education reveal">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>Shriram College of E&M, Banmore</strong> – B.Tech (2022–2026), Computer Science & Engineering (expected)</li>
+    <li><strong>Govt. Patel Hr. Sec. School, Gwalior</strong> – 12th (2021-22), 78.2%</li>
+    <li><strong>Govt. Patel Hr. Sec. School, Gwalior</strong> – 10th (2019-20), 91%</li>
+    <li><strong>CM Laptop Scheme</strong> – Received financial assistance for laptop in 12th grade</li>
+  </ul>
+</section>
+
+
+    <!-- Experience Section -->
+  <section id="experience" class="experience reveal">
+    <h2>Experience</h2>
+    <ul class="experience-list">
+      <li>
+        <h3>MyDailyWork Internship</h3>
+        <p>Intern, MyDailyWork — Worked on three tasks involving front-end feature development using HTML, CSS, and JavaScript. (May 2025)</p>
+      </li>
+      <!-- Add more experiences here as <li> items -->
+    </ul>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates reveal">
+    <h2>Certificates</h2>
+    <ul class="cert-list">
+      <li>Let’s Upgrade: Java Bootcamp, JavaScript Bootcamp, Netflix Clone, HTML CSS Bootcamp</li>
+      <li>PW Skills: AI Tools for Programmers, UI/UX Portfolio Basics, UI/UX Portfolio Bootcamp</li>
+      <li>FreeCodeCamp: JavaScript Algorithms, Responsive Web Design</li>
+      <li>CareerPhi: 5-day Training & Internship (HTML, CSS, JavaScript)</li>
+      <li>Freedom Employability Academy: Personality Development & Communication Skills</li>
+      <!-- Add any additional certificates here -->
+    </ul>
+  </section>
+
+  <!-- Resume Download Section -->
+  <section id="resume" class="resume reveal">
+    <h2>Resume</h2>
+    <p>Download my resume here:</p>
+    <a href="https://drive.google.com/uc?id=1SAo42zrvrUDGWGeC_85-ZLtZ-O75uH4m&export=download" download="Nitin_Rathor_Resume.pdf" class="btn">Download Resume (PDF)</a>
+</section>
+
+
+
+  <!-- Contact section with social links and email -->
+  <section id="contact" class="contact reveal">
+  <h2>Contact</h2>
+  <p><strong>Phone:</strong> +91-6232641885</p>
+  <p><strong>Email:</strong> <a href="mailto:nitinrathor0505feaid@gmail.com">nitinrathor0505feaid@gmail.com</a></p>
+  <div class="social-links">
+    <a href="https://github.com/Nitinrathor051" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/nitin-rathor-345719248/" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/im_nitin05/?__pwa=1" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nitin Rathor. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
