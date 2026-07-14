@@ -1,227 +1,2147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Nitin Rathor | Web Developer Portfolio</title>
-  <!-- Link to external CSS and FontAwesome for icons -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NITIN RATHOR | MERN Stack Developer</title>
+
+    <meta name="description"
+        content="Official Portfolio of Nitin Rathor - MERN Stack Developer specializing in modern web applications.">
+
+    <meta name="keywords"
+        content="Nitin Rathor, MERN Developer, React, Node.js, Express, MongoDB, Portfolio">
+
+    <meta name="author" content="Nitin Rathor">
+
+    <meta name="theme-color" content="#0B1120">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+        content="NITIN RATHOR | MERN Stack Developer">
+
+    <meta property="og:description"
+        content="Modern Full Stack Developer Portfolio">
+
+    <meta property="og:image"
+        content="nitin.png">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="style.css">
+
 </head>
+
 <body>
 
-<!-- Fixed header with logo/name, theme toggle, and nav links -->
-<header>
-  <nav class="navbar">
-    <div class="nav-brand">Nitin Rathor</div>
+    <!--==============================
+            LOADER
+    ===============================-->
 
-    <!-- Hamburger menu for small screens -->
-    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-      <span class="hamburger"></span>
-    </button>
+    <div id="loader">
 
-    <!-- Navigation links -->
-    <ul class="nav-menu">
-      <li><a href="#home" class="nav-link">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#education" class="nav-link">Education</a></li>
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#certificates" class="nav-link">Certificates</a></li>
-      <li><a href="#resume" class="nav-link">Resume</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-    
-    <!-- Dark mode toggle -->
-    <button id="theme-toggle" class="toggle-btn" aria-label="Toggle theme">🌙</button>
-  </nav>
-</header>
+        <div class="loader-logo">
 
-  <!-- Hero section with Nitin's image, name, title, intro, and a CTA button -->
-  <section id="home" class="hero reveal">
-    <img src="nitin.jpg" alt="Profile picture of Nitin Rathor" class="profile-img">
-    <h1>Nitin Rathor</h1>
-    <p class="hero-title">Web Developer & Student (Shriram College of E&M, 2022–2026)</p>
-    <p>Hello! I'm a passionate web developer and engineering student who loves creating modern, responsive websites. I specialize in front-end and back-end development and enjoy solving problems with code.</p>
-    <a href="#projects" class="btn">View Projects</a>
-  </section>
+            <span>N</span>
+            <span>R</span>
 
-  <!-- About section with placeholder bio -->
-  <section id="about" class="about reveal">
-    <h2>About Me</h2>
-    <p>I am Nitin, a Computer Science & Engineering student (2022–2026) at Shriram College of Engineering & Management. I enjoy building web applications with HTML, CSS, and JavaScript, and I constantly work on new projects to improve my skills. In my free time, I contribute to open-source and take online courses to stay updated with web technologies.</p>
-  </section>
+        </div>
 
-<section id="projects" class="projects reveal">
-  <h2>Projects</h2>
-  <div class="project-cards">
-    <!-- Weather Web -->
-    <div class="card">
-      <h3><a href="https://github.com/Nitinrathor051/weather-app" target="_blank">Weather Web</h3>
-      <p>A real-time weather app built with React.js and the OpenWeatherMap API, featuring dynamic location search and responsive design.</p></a>
     </div>
 
-    <!-- EnglishJourney Website -->
-    <div class="card">
-      <h3><a href="https://github.com/Nitinrathor051/EnglishJourny-web" target="_blank">EnglishJourney Website</h3>
-      <p>A language-learning portal frontend developed using HTML, CSS, and JavaScript, with interactive lessons and progress tracking UI.</p></a>
+    <!--==============================
+        SCROLL PROGRESS BAR
+    ===============================-->
+
+    <div id="progress-bar"></div>
+
+    <!--==============================
+            CUSTOM CURSOR
+    ===============================-->
+
+    <div class="cursor-dot"></div>
+
+    <div class="cursor-outline"></div>
+
+    <!--==============================
+        BACKGROUND EFFECTS
+    ===============================-->
+
+    <div class="bg-gradient gradient-1"></div>
+
+    <div class="bg-gradient gradient-2"></div>
+
+    <div class="grid-overlay"></div>
+
+    <!--==============================
+            HEADER
+    ===============================-->
+
+    <header id="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- Logo -->
+
+                <a href="#home"
+                    class="logo">
+
+                    <span>N</span>R
+
+                </a>
+
+                <!-- Desktop Navigation -->
+
+                <ul class="nav-menu">
+
+                    <li>
+                        <a href="#home"
+                            class="nav-link active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about"
+                            class="nav-link">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#stack"
+                            class="nav-link">
+                            Tech Stack
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#journey"
+                            class="nav-link">
+                            Journey
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects"
+                            class="nav-link">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                            class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- Right Actions -->
+
+                <div class="nav-actions">
+
+                    <!-- Resume -->
+
+                    <a href="#resume"
+                        class="resume-btn">
+
+                        Resume
+
+                    </a>
+
+                    <!-- Theme -->
+
+                    <button id="theme-toggle"
+                        aria-label="Theme Toggle">
+
+                        🌙
+
+                    </button>
+
+                    <!-- Mobile Menu -->
+
+                    <button id="menu-btn"
+                        aria-label="Open Menu">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!--==============================
+        MOBILE NAVIGATION
+    ===============================-->
+
+    <aside id="mobile-menu">
+
+        <div class="mobile-menu-header">
+
+            <span class="mobile-logo">
+
+                NR
+
+            </span>
+
+            <button id="close-menu">
+
+                ✕
+
+            </button>
+
+        </div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#stack">Tech Stack</a>
+
+            <a href="#journey">Journey</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="#resume"
+                class="mobile-resume">
+
+                Resume
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!--==============================
+            MAIN
+    ===============================-->
+
+    <main>
+
+        <!--==============================
+                HERO SECTION
+        ===============================-->
+
+        <section id="home" class="hero">
+
+            <div class="container hero-container">
+
+
+                <!-- Hero Content -->
+
+                <div class="hero-content">
+
+
+                    <span class="availability">
+
+                        <span class="status-dot"></span>
+
+                        Available for Work
+
+                    </span>
+
+
+                    <p class="hero-small-text">
+
+                        Hello, I'm
+
+                    </p>
+
+
+                    <h1>
+
+                        NITIN RATHOR
+
+                    </h1>
+
+
+                    <h2>
+
+                        MERN Stack Developer
+
+                    </h2>
+
+
+                    <p class="hero-description">
+
+                        I build modern, responsive and scalable web
+                        applications using React.js, Node.js, Express.js
+                        and MongoDB with clean architecture and
+                        user-focused design.
+
+                    </p>
+
+
+                    <!-- Buttons -->
+
+                    <div class="hero-buttons">
+
+
+                        <a href="#projects"
+                            class="btn primary-btn">
+
+                            View Projects
+
+                        </a>
+
+
+                        <a href="#contact"
+                            class="btn secondary-btn">
+
+                            Contact Me
+
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- Social Links -->
+
+                    <div class="social-links">
+
+
+                        <a href="https://github.com/Nitinrathor051"
+                            target="_blank"
+                            aria-label="Github">
+
+                            GitHub
+
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/nitin-rathor-345719248/"
+                            target="_blank"
+                            aria-label="LinkedIn">
+
+                            LinkedIn
+
+                        </a>
+
+
+                        <a href="mailto:nitinrathor0505feaid@gmail.com"
+                            aria-label="Email">
+
+                            Email
+
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- Stats -->
+
+                    <div class="hero-stats">
+
+
+                        <div class="stat-card">
+
+                            <h3>
+                                10+
+                            </h3>
+
+                            <p>
+                                Projects
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="stat-card">
+
+                            <h3>
+                                MERN
+                            </h3>
+
+                            <p>
+                                Full Stack
+                            </p>
+
+                        </div>
+
+
+
+                        <div class="stat-card">
+
+                            <h3>
+                                B.Tech
+                            </h3>
+
+                            <p>
+                                CSE
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <!-- Hero Image -->
+
+
+                <div class="hero-image">
+
+
+                    <div class="image-box">
+
+
+                        <div class="image-glow"></div>
+
+
+                        <img src="nr5.jpeg"
+                            alt="Nitin Rathor - MERN Stack Developer"
+                            loading="lazy">
+
+
+                    </div>
+
+
+
+                    <!-- Floating Card -->
+
+
+                    <div class="floating-card">
+
+
+                        <span>
+                            💻
+                        </span>
+
+
+                        <div>
+
+                            <strong>
+                                MERN Developer
+                            </strong>
+
+                            <p>
+                                React • Node • MongoDB
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Scroll Down -->
+
+
+            <a href="#about"
+                class="scroll-down">
+
+                <span></span>
+
+                Scroll
+
+            </a>
+
+
+
+        </section>
+        <!--==============================
+                ABOUT SECTION
+        ===============================-->
+
+        <section id="about" class="about section">
+
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+
+                    <span>
+                        ABOUT ME
+                    </span>
+
+
+                    <h2>
+                        Turning Ideas Into Digital Solutions
+                    </h2>
+
+
+                    <p>
+                        A passionate developer focused on building
+                        modern, scalable and user-friendly web
+                        applications.
+                    </p>
+
+
+                </div>
+
+
+
+
+                <div class="about-wrapper">
+
+
+
+                    <!-- About Content -->
+
+
+                    <div class="about-content">
+
+
+                        <h3>
+                            MERN Stack Developer
+                        </h3>
+
+
+                        <p>
+
+                            I'm Nitin Rathor, a Computer Science
+                            graduate with hands-on experience in
+                            full-stack web development.
+
+                            I specialize in creating responsive
+                            applications using the MERN stack and
+                            enjoy solving real-world problems through
+                            clean and efficient code.
+
+                        </p>
+
+
+
+                        <p>
+
+                            My development approach focuses on
+                            performance, scalability, responsive UI
+                            and writing maintainable code that can
+                            grow with the product.
+
+                        </p>
+
+
+
+                        <!-- Highlights -->
+
+
+                        <div class="about-highlights">
+
+
+                            <div class="highlight-item">
+
+
+                                <span>
+                                    ✓
+                                </span>
+
+
+                                <p>
+                                    Full Stack Web Development
+                                </p>
+
+
+                            </div>
+
+
+
+                            <div class="highlight-item">
+
+
+                                <span>
+                                    ✓
+                                </span>
+
+
+                                <p>
+                                    REST API Development
+                                </p>
+
+
+                            </div>
+
+
+
+                            <div class="highlight-item">
+
+
+                                <span>
+                                    ✓
+                                </span>
+
+
+                                <p>
+                                    Authentication & Security
+                                </p>
+
+
+                            </div>
+
+
+
+                            <div class="highlight-item">
+
+
+                                <span>
+                                    ✓
+                                </span>
+
+
+                                <p>
+                                    Responsive UI Development
+                                </p>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- Info Cards -->
+
+
+                    <div class="about-cards">
+
+
+
+                        <div class="info-card">
+
+
+                            <span>
+                                🎓
+                            </span>
+
+
+                            <h4>
+                                Education
+                            </h4>
+
+
+                            <p>
+                                B.Tech Computer Science
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="info-card">
+
+
+                            <span>
+                                🚀
+                            </span>
+
+
+                            <h4>
+                                Focus
+                            </h4>
+
+
+                            <p>
+                                MERN Stack Development
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="info-card">
+
+
+                            <span>
+                                💡
+                            </span>
+
+
+                            <h4>
+                                Strength
+                            </h4>
+
+
+                            <p>
+                                Problem Solving
+                            </p>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="info-card">
+
+
+                            <span>
+                                📍
+                            </span>
+
+
+                            <h4>
+                                Location
+                            </h4>
+
+
+                            <p>
+                                Gwalior, India
+                            </p>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <!--==============================
+              TECH STACK SECTION
+        ===============================-->
+
+        <section id="stack" class="skills section">
+
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+
+                    <span>
+                        TECH STACK
+                    </span>
+
+
+                    <h2>
+                        Technologies I Work With
+                    </h2>
+
+
+                    <p>
+                        Tools and technologies I use to build
+                        modern full-stack web applications.
+                    </p>
+
+
+                </div>
+
+
+
+
+                <div class="skills-grid">
+
+
+
+                    <!-- Frontend -->
+
+
+                    <div class="skill-card">
+
+
+                        <div class="skill-icon">
+                            🎨
+                        </div>
+
+
+                        <h3>
+                            Frontend
+                        </h3>
+
+
+                        <div class="skill-list">
+
+
+                            <span>
+                                HTML5
+                            </span>
+
+
+                            <span>
+                                CSS3
+                            </span>
+
+
+                            <span>
+                                JavaScript
+                            </span>
+
+
+                            <span>
+                                React.js
+                            </span>
+
+
+                            <span>
+                                Bootstrap
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- Backend -->
+
+
+                    <div class="skill-card">
+
+
+                        <div class="skill-icon">
+                            ⚙️
+                        </div>
+
+
+                        <h3>
+                            Backend
+                        </h3>
+
+
+                        <div class="skill-list">
+
+
+                            <span>
+                                Node.js
+                            </span>
+
+
+                            <span>
+                                Express.js
+                            </span>
+
+
+                            <span>
+                                REST APIs
+                            </span>
+
+
+                            <span>
+                                JWT
+                            </span>
+
+
+                            <span>
+                                MVC Architecture
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- Database -->
+
+
+                    <div class="skill-card">
+
+
+                        <div class="skill-icon">
+                            🗄️
+                        </div>
+
+
+                        <h3>
+                            Database
+                        </h3>
+
+
+                        <div class="skill-list">
+
+
+                            <span>
+                                MongoDB
+                            </span>
+
+
+                            <span>
+                                Mongoose
+                            </span>
+
+
+                            <span>
+                                SQL Basics
+                            </span>
+
+
+                            <span>
+                                Database Design
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- Programming -->
+
+
+                    <div class="skill-card">
+
+
+                        <div class="skill-icon">
+                            💻
+                        </div>
+
+
+                        <h3>
+                            Programming
+                        </h3>
+
+
+                        <div class="skill-list">
+
+
+                            <span>
+                                Java
+                            </span>
+
+
+                            <span>
+                                JavaScript
+                            </span>
+
+
+                            <span>
+                                OOP
+                            </span>
+
+
+                            <span>
+                                DSA
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- Tools -->
+
+
+                    <div class="skill-card">
+
+
+                        <div class="skill-icon">
+                            🛠️
+                        </div>
+
+
+                        <h3>
+                            Tools
+                        </h3>
+
+
+                        <div class="skill-list">
+
+
+                            <span>
+                                Git
+                            </span>
+
+
+                            <span>
+                                GitHub
+                            </span>
+
+
+                            <span>
+                                VS Code
+                            </span>
+
+
+                            <span>
+                                Postman
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- Soft Skills -->
+
+
+                    <div class="skill-card">
+
+
+                        <div class="skill-icon">
+                            🤝
+                        </div>
+
+
+                        <h3>
+                            Soft Skills
+                        </h3>
+
+
+                        <div class="skill-list">
+
+
+                            <span>
+                                Problem Solving
+                            </span>
+
+
+                            <span>
+                                Team Work
+                            </span>
+
+
+                            <span>
+                                Communication
+                            </span>
+
+
+                            <span>
+                                Quick Learning
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <!--==============================
+      JOURNEY SECTION
+===============================-->
+
+<section id="journey" class="journey section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>MY JOURNEY</span>
+
+            <h2>Learning Journey & Professional Growth</h2>
+
+            <p>
+                A timeline showcasing my academic foundation, technical
+                training, certifications and hands-on full-stack
+                development experience.
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <!-- Timeline Item 1 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2022 – 2026
+                    </span>
+
+                    <h3>
+                        B.Tech in Computer Science Engineering
+                    </h3>
+
+                    <h4>
+                        Shriram College of Engineering & Management, Banmore
+                    </h4>
+
+                    <p>
+                        Built a strong academic foundation in programming,
+                        database management, operating systems, computer
+                        networks, software engineering and modern web
+                        development.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Timeline Item 2 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Jun 2025 – May 2026
+                    </span>
+
+                    <h3>
+                        Java DSA & MERN Stack Development Program
+                    </h3>
+
+                    <h4>
+                        Coding Thinker
+                    </h4>
+
+                    <p>
+                        Successfully completed an intensive industry-oriented
+                        training program covering Java, Data Structures &
+                        Algorithms, HTML, CSS, JavaScript, React.js,
+                        Node.js, Express.js, MongoDB, REST APIs and Git
+                        through real-world full-stack projects.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Timeline Item 3 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2025
+                    </span>
+
+                    <h3>
+                        Professional Certifications
+                    </h3>
+
+                    <h4>
+                        freeCodeCamp • LetsUpgrade • PW Skills
+                    </h4>
+
+                    <p>
+                        Earned certifications in JavaScript, Java,
+                        Data Structures & Algorithms and AI-assisted
+                        programming while continuously improving
+                        technical knowledge and problem-solving skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Timeline Item 4 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2025 – 2026
+                    </span>
+
+                    <h3>
+                        Full Stack Project Development
+                    </h3>
+
+                    <h4>
+                        Personal & Academic Projects
+                    </h4>
+
+                    <p>
+                        Designed, developed and deployed modern web
+                        applications including Weather Dashboard,
+                        Shoplixy E-Commerce and PackNGo using the
+                        MERN Stack, REST APIs, JWT authentication and
+                        responsive UI design.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Timeline Item 5 -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2026
+                    </span>
+
+                    <h3>
+                        Software Developer Career
+                    </h3>
+
+                    <h4>
+                        Open to Full-Time Opportunities
+                    </h4>
+
+                    <p>
+                        Actively seeking Software Developer and MERN Stack
+                        Developer opportunities to contribute, learn and
+                        build scalable applications while growing as a
+                        professional software engineer.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- PacknGo Travel Booking -->
-    <div class="card">
-      <h3><a href="https://github.com/Naitikjain29/PackNGo" target="_blank">PacknGo Travel Booking</h3>
-      <p>Led a team of three to build a travel booking platform using HTML, CSS, and JavaScript, featuring destination listings and booking forms.</p></a>
+</section>
+        <!--==============================
+              PROJECTS SECTION
+        ===============================-->
+
+        <section id="projects" class="projects section">
+
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+
+                    <span>
+                        PROJECTS
+                    </span>
+
+
+                    <h2>
+                        Featured Work
+                    </h2>
+
+
+                    <p>
+                        Real-world applications built with modern
+                        technologies and practical solutions.
+                    </p>
+
+
+                </div>
+
+
+
+
+                <div class="projects-grid">
+
+
+
+                    <!-- Project 1 -->
+
+
+                    <article class="project-card">
+
+
+                        <div class="project-top">
+
+
+                            <span class="project-number">
+                                01
+                            </span>
+
+
+                            <span class="project-type">
+                                MERN
+                            </span>
+
+
+                        </div>
+
+
+
+                        <h3>
+                            Weather Dashboard
+                        </h3>
+
+
+                        <p>
+
+                            A full-stack weather application with
+                            user authentication, city management,
+                            real-time weather data and AI-powered
+                            weather suggestions.
+
+                        </p>
+
+
+
+                        <div class="tech-tags">
+
+
+                            <span>
+                                React
+                            </span>
+
+
+                            <span>
+                                Node.js
+                            </span>
+
+
+                            <span>
+                                Express
+                            </span>
+
+
+                            <span>
+                                MongoDB
+                            </span>
+
+
+                            <span>
+                                JWT
+                            </span>
+
+
+                        </div>
+
+
+
+                        <div class="project-links">
+
+
+                            <a href="https://weather-dashboard-rose-zeta.vercel.app/"
+                                target="_blank">
+
+                                Live Demo
+
+                            </a>
+
+
+                            <a href="https://github.com/Nitinrathor051/weather-dashboard"
+                                target="_blank">
+
+                                GitHub
+
+                            </a>
+
+
+                        </div>
+
+
+
+                    </article>
+
+
+
+
+
+
+                    <!-- Project 2 -->
+
+
+                    <article class="project-card">
+
+
+                        <div class="project-top">
+
+
+                            <span class="project-number">
+                                02
+                            </span>
+
+
+                            <span class="project-type">
+                                E-COMMERCE
+                            </span>
+
+
+                        </div>
+
+
+
+                        <h3>
+                            Shoplixy
+                        </h3>
+
+
+                        <p>
+
+                            A complete MERN based e-commerce platform
+                            with secure authentication, product
+                            management, shopping cart and user roles.
+
+                        </p>
+
+
+
+                        <div class="tech-tags">
+
+
+                            <span>
+                                React
+                            </span>
+
+
+                            <span>
+                                Node.js
+                            </span>
+
+
+                            <span>
+                                Express
+                            </span>
+
+
+                            <span>
+                                MongoDB
+                            </span>
+
+
+                            <span>
+                                REST API
+                            </span>
+
+
+                        </div>
+
+
+
+                        <div class="project-links">
+
+
+                            <a href="https://shoplixy-ecommerce-cm2q.vercel.app/"
+                                target="_blank">
+
+                                Live Demo
+
+                            </a>
+
+
+                            <a href="https://github.com/Nitinrathor051/Shoplixy-Ecommerce"
+                                target="_blank">
+
+                                GitHub
+
+                            </a>
+
+
+                        </div>
+
+
+
+                    </article>
+
+
+
+
+
+
+
+                    <!-- Project 3 -->
+
+
+                    <article class="project-card">
+
+
+                        <div class="project-top">
+
+
+                            <span class="project-number">
+                                03
+                            </span>
+
+
+                            <span class="project-type">
+                                FRONTEND
+                            </span>
+
+
+                        </div>
+
+
+
+                        <h3>
+                            PackNGo Travel Website
+                        </h3>
+
+
+                        <p>
+
+                            A responsive travel website designed with
+                            modern layouts, attractive UI and smooth
+                            user experience for travel services.
+
+                        </p>
+
+
+
+                        <div class="tech-tags">
+
+
+                            <span>
+                                HTML5
+                            </span>
+
+
+                            <span>
+                                CSS3
+                            </span>
+
+
+                            <span>
+                                JavaScript
+                            </span>
+
+
+                            <span>
+                                Responsive UI
+                            </span>
+
+
+                        </div>
+
+
+
+                        <div class="project-links">
+
+
+                            <a href="https://nitinrathor051.github.io/Pack-N-Go/"
+                                target="_blank">
+
+                                Live Demo
+
+                            </a>
+
+
+                            <a href="https://github.com/Nitinrathor051"
+                                target="_blank">
+
+                                GitHub
+
+                            </a>
+
+
+                        </div>
+
+
+
+                    </article>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+<!--==============================
+      RESUME SECTION
+===============================-->
+
+<section id="resume" class="resume section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>RESUME</span>
+
+            <h2>My Professional Profile</h2>
+
+            <p>
+                Download my latest resume to explore my technical skills,
+                projects, certifications and professional journey.
+            </p>
+
+        </div>
+
+        <div class="resume-card">
+
+            <div class="resume-content">
+
+                <div class="resume-icon">
+                    📄
+                </div>
+
+                <div>
+
+                    <h3>Nitin Rathor Resume</h3>
+
+                    <p>
+                        MERN Stack Developer with hands-on experience in
+                        React.js, Node.js, Express.js, MongoDB, Java,
+                        REST APIs and responsive web development.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="resume-buttons">
+
+                <!-- View Resume -->
+                <a href="https://drive.google.com/file/d/1K82LKL3ipsbzP4Y5U3z9pNuocip4NX7N/view?usp=drive_link"
+                    class="btn primary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    View Resume
+
+                </a>
+
+                <!-- Direct Download -->
+                <a href="https://drive.google.com/uc?export=download&id=1K82LKL3ipsbzP4Y5U3z9pNuocip4NX7N"
+                    class="btn secondary-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    Download PDF
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- Bulb On/Off -->
-    <div class="card">
-      <h3><a href="https://github.com/Nitinrathor051/Bulb-switch-webpage" target="_blank">Bulb On/Off</h3>
-      <p>An interactive web app that toggles a bulb graphic on and off, built with HTML, CSS, and JavaScript event handling.</p></a>
-    </div>
-
-    <!-- Typing Test Web -->
-    <div class="card">
-      <h3><a href="https://github.com/Nitinrathor051/Typingtest-web" target="_blank">Typing Test Web</h3>
-      <p>An engaging typing test platform showcasing real-time typing speed and accuracy, created with JavaScript and CSS animations.</p></a>
-    </div>
-
-    <!-- Investment Portfolio Tracker -->
-    <div class="card">
-      <h3><a href="https://github.com/Nitinrathor051/Investment-portfolio-tracker" target="_blank">Investment Portfolio Tracker</h3>
-      <p>A web application for tracking investments, built with HTML, CSS, and JavaScript, featuring data visualization and performance analytics.</p></a>
-    </div>
-
-    <!-- Banking Dashboard -->
-    <div class="card">
-      <h3><a href="https://github.com/Nitinrathor051/BANKING-DASHBOARD" target="_blank">Banking Dashboard</h3>
-      <p>A responsive banking dashboard interface designed using HTML, CSS, and JavaScript, with a focus on financial data presentation.</p></a>
-    </div>
-  </div>
 </section>
 
-<!-- Skills section with categorized headings -->
-<section id="skills" class="skills reveal">
-  <h2>Skills</h2>
-  
-  <div class="skill-category">
-    <h3>Frontend Development</h3>
-    <ul class="skill-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React.js</li>
-      <li>Bootstrap</li>
-      <li>Responsive Design</li>
-    </ul>
-  </div>
+<!--=================================
+        CERTIFICATIONS SECTION
+==================================-->
 
-  <div class="skill-category">
-    <h3>Backend Development</h3>
-    <ul class="skill-list">
-      <li>Node.js</li>
-      <li>Express.js</li>
-      <li>SQL (Basic)</li>
-    </ul>
-  </div>
+<section id="certificates" class="certificates section">
 
-  <div class="skill-category">
-    <h3>Programming Languages</h3>
-    <ul class="skill-list">
-      <li>Java</li>
-      <li>OOP (Object-Oriented Programming)</li>
-    </ul>
-  </div>
+    <div class="container">
 
-  <div class="skill-category">
-    <h3>Tools & Platforms</h3>
-    <ul class="skill-list">
-      <li>VS Code</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </div>
+        <div class="section-heading">
 
-  <div class="skill-category">
-    <h3>Soft Skills</h3>
-    <ul class="skill-list">
-      <li>Problem Solving</li>
-      <li>Team Collaboration</li>
-      <li>Time Management</li>
-    </ul>
-  </div>
+            <span>CERTIFICATIONS</span>
+
+            <h2>Professional Certifications</h2>
+
+            <p>
+                A selection of industry-recognized certifications that
+                demonstrate my continuous learning in full-stack development,
+                JavaScript, problem solving, and professional communication.
+            </p>
+
+        </div>
+
+        <div class="certificate-grid">
+
+
+            <!-- Certificate 1 -->
+
+            <article class="certificate-card">
+
+                <div class="certificate-logo">
+
+                    <img
+                        src="codingthinker logo.png"
+                        alt="Coding Thinker Logo"
+                    >
+
+                </div>
+
+                <h3>
+                    Java DSA & MERN Stack
+                </h3>
+
+                <h4>
+                    Coding Thinker • May 2026
+                </h4>
+
+                <p>
+                    Comprehensive training covering Java, Data Structures &
+                    Algorithms, HTML, CSS, JavaScript, React.js, Node.js,
+                    Express.js, MongoDB, REST APIs and Git through
+                    production-oriented full-stack development.
+                </p>
+
+                <div class="certificate-tags">
+
+                    <span>Java</span>
+                    <span>DSA</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+
+                </div>
+
+                <a
+                    href="https://drive.google.com/file/d/1ipdDQIIqKkIr_LA8auveTMROl8oeqnWM/view?usp=drive_link"
+                    target="_blank">
+
+                    View Credential →
+
+                </a>
+
+            </article>
+
+
+
+            <!-- Certificate 2 -->
+
+            <article class="certificate-card">
+
+                <div class="certificate-logo">
+
+                    <img
+                        src="freecodecamp logo.png"
+                        alt="freeCodeCamp Logo"
+                    >
+
+                </div>
+
+                <h3>
+                    JavaScript Algorithms &
+                    Data Structures
+                </h3>
+
+                <h4>
+                    freeCodeCamp • Apr 2025
+                </h4>
+
+                <p>
+                    Built a strong foundation in JavaScript, ES6,
+                    algorithms, data structures and problem-solving
+                    through practical coding exercises.
+                </p>
+
+                <div class="certificate-tags">
+
+                    <span>JavaScript</span>
+                    <span>ES6</span>
+                    <span>Algorithms</span>
+                    <span>Problem Solving</span>
+
+                </div>
+
+                <a
+                    href="https://drive.google.com/file/d/1Csim4crVPZl4o_Vc9fqu_hTqQG9ByxiM/view?usp=sharing"
+                    target="_blank">
+
+                    View Credential →
+
+                </a>
+
+            </article>
+
+
+
+            <!-- Certificate 3 -->
+
+            <article class="certificate-card">
+
+                <div class="certificate-logo">
+
+                    <img
+                        src="fea logo.jpeg"
+                        alt="Freedom Employability Academy Logo"
+                    >
+
+                </div>
+
+                <h3>
+                    Personality Development &
+                    Communication Skills
+                </h3>
+
+                <h4>
+                    Freedom Employability Academy • Apr 2023
+                </h4>
+
+                <p>
+                    Developed professional communication, interview,
+                    teamwork and workplace skills essential for
+                    collaborating effectively in software teams.
+                </p>
+
+                <div class="certificate-tags">
+
+                    <span>Communication</span>
+                    <span>Interview Skills</span>
+                    <span>Teamwork</span>
+
+                </div>
+
+                <a
+                    href="https://drive.google.com/file/d/1sqc2CdOr2vugvHJnsVt5_j3zQisiHyCV/view?usp=sharing"
+                    target="_blank">
+
+                    View Credential →
+
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==============================
+      CONTACT SECTION
+===============================-->
+
+<section id="contact" class="contact section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>CONTACT</span>
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                I'm open to Software Developer and MERN Stack Developer
+                opportunities. Feel free to connect through any of the
+                platforms below.
+            </p>
+
+        </div>
+
+        <div class="contact-info">
+
+            <div class="contact-card">
+
+                <span>📧</span>
+
+                <div>
+
+                    <h3>Email</h3>
+
+                    <a href="mailto:nitinrathor0505feaid@gmail.com">
+                        nitinrathor0505feaid@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <span>💼</span>
+
+                <div>
+
+                    <h3>LinkedIn</h3>
+
+                    <a href="https://www.linkedin.com/in/nitin-rathor-345719248/"
+                        target="_blank">
+
+                        linkedin.com/in/nitin-rathor-345719248
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <span>💻</span>
+
+                <div>
+
+                    <h3>GitHub</h3>
+
+                    <a href="https://github.com/Nitinrathor051"
+                        target="_blank">
+
+                        github.com/Nitinrathor051
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-card">
+
+                <span>📍</span>
+
+                <div>
+
+                    <h3>Location</h3>
+
+                    <p>Gwalior, Madhya Pradesh, India</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
+        <!--==============================
+              FOOTER
+        ===============================-->
 
-<!-- Education section -->
-<section id="education" class="education reveal">
-  <h2>Education</h2>
-  <ul>
-    <li><strong>Shriram College of E&M, Banmore</strong> – B.Tech (2022–2026), Computer Science & Engineering (expected)</li>
-    <li><strong>Govt. Patel Hr. Sec. School, Gwalior</strong> – 12th (2021-22), 78.2%</li>
-    <li><strong>Govt. Patel Hr. Sec. School, Gwalior</strong> – 10th (2019-20), 91%</li>
-    <li><strong>CM Laptop Scheme</strong> – Received financial assistance for laptop in 12th grade</li>
-  </ul>
-</section>
+        <footer class="footer">
 
 
-    <!-- Experience Section -->
-  <section id="experience" class="experience reveal">
-    <h2>Experience</h2>
-    <ul class="experience-list">
-      <li>
-        <h3>MyDailyWork Internship</h3>
-        <p>Intern, MyDailyWork — Worked on three tasks involving front-end feature development using HTML, CSS, and JavaScript. (May 2025)</p>
-      </li>
-      <!-- Add more experiences here as <li> items -->
-    </ul>
-  </section>
+            <div class="container">
 
-  <!-- Certificates Section -->
-  <section id="certificates" class="certificates reveal">
-    <h2>Certificates</h2>
-    <ul class="cert-list">
-      <li>Let’s Upgrade: Java Bootcamp, JavaScript Bootcamp, Netflix Clone, HTML CSS Bootcamp</li>
-      <li>PW Skills: AI Tools for Programmers, UI/UX Portfolio Basics, UI/UX Portfolio Bootcamp</li>
-      <li>FreeCodeCamp: JavaScript Algorithms, Responsive Web Design</li>
-      <li>CareerPhi: 5-day Training & Internship (HTML, CSS, JavaScript)</li>
-      <li>Freedom Employability Academy: Personality Development & Communication Skills</li>
-      <!-- Add any additional certificates here -->
-    </ul>
-  </section>
 
-  <!-- Resume Download Section -->
-  <section id="resume" class="resume reveal">
-    <h2>Resume</h2>
-    <p>Download my resume here:</p>
-    <a href="https://drive.google.com/file/d/1x9VatskAOO6N83vlX7gAoJZ45pADCMAl/view?usp=drive_link" download="Nitin_Rathor_Resume.pdf" class="btn">Download Resume (PDF)</a>
-</section>
+                <div class="footer-content">
 
 
 
-  <!-- Contact section with social links and email -->
-  <section id="contact" class="contact reveal">
-  <h2>Contact</h2>
-  <p><strong>Phone:</strong> +91-6232641885</p>
-  <p><strong>Email:</strong> <a href="mailto:nitinrathor0505feaid@gmail.com">nitinrathor0505feaid@gmail.com</a></p>
-  <div class="social-links">
-    <a href="https://github.com/Nitinrathor051" target="_blank" aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/nitin-rathor-345719248/" target="_blank" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://www.instagram.com/im_nitin05/?__pwa=1" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-  </div>
-</section>
+                    <div class="footer-logo">
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Nitin Rathor. All rights reserved.</p>
-  </footer>
 
-  <!-- JavaScript file -->
-  <script src="script.js"></script>
+                        <a href="#home"
+                            class="logo">
+
+                            <span>N</span>R
+
+                        </a>
+
+
+                        <p>
+
+                            MERN Stack Developer building modern
+                            and scalable web applications.
+
+                        </p>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="footer-links">
+
+
+                        <h3>
+                            Quick Links
+                        </h3>
+
+
+                        <a href="#about">
+                            About
+                        </a>
+
+
+                        <a href="#projects">
+                            Projects
+                        </a>
+
+
+                        <a href="#stack">
+                            Tech Stack
+                        </a>
+
+
+                        <a href="#contact">
+                            Contact
+                        </a>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="footer-social">
+
+
+                        <h3>
+                            Connect
+                        </h3>
+
+
+                        <a href="https://github.com/Nitinrathor051"
+                            target="_blank">
+
+                            GitHub
+
+                        </a>
+
+
+                        <a href="https://www.linkedin.com/in/nitin-rathor-345719248/"
+                            target="_blank">
+
+                            LinkedIn
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="footer-bottom">
+
+
+                    <p>
+
+                        © 2026 Nitin Rathor. All Rights Reserved.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </footer>
+
+
+
+
+
+        <!-- Back To Top Button -->
+
+
+        <button id="back-to-top"
+            aria-label="Back to top">
+
+            ↑
+
+        </button>
+
+
+
+    </main>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+
 </body>
-</html>
+
+
+</html>                
