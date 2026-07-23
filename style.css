@@ -1446,99 +1446,99 @@ ul {
 
 
 
-
 /* ======================================
         PROJECTS
 ====================================== */
 
-
-.projects-grid {
+.projects-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,minmax(0,1fr));
 
-    gap:25px;
+    gap:30px;
+
+    align-items:stretch;
 
 }
 
+.project-card{
 
+    display:flex;
 
-.project-card {
+    flex-direction:column;
 
-    padding:30px;
+    padding:32px;
 
-    border-radius:25px;
+    border-radius:24px;
 
     border:1px solid var(--border-color);
 
     background:var(--card-bg);
 
-    transition:.3s;
+    transition:.35s;
+
+    height:100%;
 
 }
 
+.project-card:hover{
 
+    transform:translateY(-8px);
 
-.project-card:hover {
-
-    transform:translateY(-10px);
+    border-color:var(--primary-color);
 
 }
 
-
-
-.project-top {
+.project-top{
 
     display:flex;
 
     justify-content:space-between;
 
+    align-items:center;
+
 }
 
-
-
-.project-number {
+.project-number{
 
     color:var(--primary-color);
 
-    font-size:28px;
+    font-size:30px;
 
     font-weight:700;
 
 }
 
+.project-type{
 
-
-.project-type {
-
-    font-size:12px;
+    font-size:13px;
 
     color:var(--text-muted);
 
-}
-
-
-
-.project-card h3 {
-
-    font-size:26px;
-
-    margin:25px 0 15px;
+    letter-spacing:1px;
 
 }
 
+.project-card h3{
 
+    font-size:28px;
 
-.project-card p {
+    margin:22px 0 14px;
+
+}
+
+.project-card p{
 
     color:var(--text-muted);
 
+    line-height:1.8;
+
+    flex:1;
+
 }
 
-
-
-.tech-tags {
+.tech-tags{
 
     display:flex;
 
@@ -1546,37 +1546,35 @@ ul {
 
     gap:10px;
 
-    margin:25px 0;
+    margin:24px 0;
 
 }
 
-
-
-.project-links {
+.project-links{
 
     display:flex;
 
-    gap:15px;
+    gap:14px;
+
+    margin-top:auto;
 
 }
 
+.project-links a{
 
+    padding:10px 18px;
 
-.project-links a {
-
-    padding:8px 18px;
-
-    border-radius:20px;
+    border-radius:22px;
 
     border:1px solid var(--border-color);
 
     font-size:14px;
 
+    transition:.3s;
+
 }
 
-
-
-.project-links a:hover {
+.project-links a:hover{
 
     background:var(--primary-color);
 
