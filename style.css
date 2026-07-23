@@ -1445,7 +1445,6 @@ ul {
 
 
 
-
 /* ======================================
         PROJECTS
 ====================================== */
@@ -1456,7 +1455,7 @@ ul {
 
     grid-template-columns:repeat(2,minmax(0,1fr));
 
-    gap:30px;
+    gap:26px;
 
     align-items:stretch;
 
@@ -1468,17 +1467,19 @@ ul {
 
     flex-direction:column;
 
-    padding:32px;
+    justify-content:space-between;
 
-    border-radius:24px;
+    min-height:310px;
+
+    padding:24px;
+
+    border-radius:22px;
 
     border:1px solid var(--border-color);
 
     background:var(--card-bg);
 
-    transition:.35s;
-
-    height:100%;
+    transition:var(--transition);
 
 }
 
@@ -1487,6 +1488,8 @@ ul {
     transform:translateY(-8px);
 
     border-color:var(--primary-color);
+
+    box-shadow:0 16px 35px rgba(0,0,0,.18);
 
 }
 
@@ -1498,13 +1501,15 @@ ul {
 
     align-items:center;
 
+    margin-bottom:14px;
+
 }
 
 .project-number{
 
     color:var(--primary-color);
 
-    font-size:30px;
+    font-size:28px;
 
     font-weight:700;
 
@@ -1512,7 +1517,9 @@ ul {
 
 .project-type{
 
-    font-size:13px;
+    font-size:12px;
+
+    font-weight:600;
 
     color:var(--text-muted);
 
@@ -1522,9 +1529,11 @@ ul {
 
 .project-card h3{
 
-    font-size:28px;
+    font-size:24px;
 
-    margin:22px 0 14px;
+    margin-bottom:10px;
+
+    line-height:1.3;
 
 }
 
@@ -1532,7 +1541,11 @@ ul {
 
     color:var(--text-muted);
 
-    line-height:1.8;
+    font-size:15px;
+
+    line-height:1.65;
+
+    margin-bottom:18px;
 
     flex:1;
 
@@ -1544,9 +1557,25 @@ ul {
 
     flex-wrap:wrap;
 
-    gap:10px;
+    gap:8px;
 
-    margin:24px 0;
+    margin-bottom:20px;
+
+}
+
+.tech-tags span{
+
+    padding:5px 12px;
+
+    border-radius:18px;
+
+    background:rgba(56,189,248,.12);
+
+    color:var(--primary-color);
+
+    font-size:12px;
+
+    font-weight:500;
 
 }
 
@@ -1554,7 +1583,7 @@ ul {
 
     display:flex;
 
-    gap:14px;
+    gap:12px;
 
     margin-top:auto;
 
@@ -1562,15 +1591,23 @@ ul {
 
 .project-links a{
 
-    padding:10px 18px;
+    display:inline-flex;
 
-    border-radius:22px;
+    align-items:center;
+
+    justify-content:center;
+
+    padding:9px 16px;
+
+    border-radius:20px;
 
     border:1px solid var(--border-color);
 
-    font-size:14px;
+    font-size:13px;
 
-    transition:.3s;
+    font-weight:600;
+
+    transition:var(--transition);
 
 }
 
@@ -1578,10 +1615,11 @@ ul {
 
     background:var(--primary-color);
 
-    color:#000;
+    color:#081018;
 
-}
-/* ======================================
+    border-color:var(--primary-color);
+
+}/* ======================================
         RESUME SECTION
 ====================================== */
 
